@@ -7,3 +7,5 @@ Specifically Replay, Strong and Weak Scaling (https://www.sharcnet.ca/help/index
 Allows tuning of replay dispatchers, threadpool, partition size, buffer size etc.
 
 Originally used to compare performance improvement between versions "0.7-SNAPSHOT" with the blocking iterator abstraction and version "0.15-SNAPSHOT" using Akka Persistence Query EventsByPersistenceId stream for asynchronous non blocking replay.
+
+Some of the results were published in my Data in Motion: Streaming Static Data Efficiently presentation (http://www.slideshare.net/MartinZapletal/data-in-motion-streaming-static-data-efficiently).
