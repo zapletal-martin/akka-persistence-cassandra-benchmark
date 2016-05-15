@@ -1,0 +1,119 @@
+.DS_Store
+target/
+target-ide/
+.idea/
+*~
+.vagrant/
+
+# Vim tmp files.
+*.swp
+
+#====================================
+#===== Python generic gitignore =====
+#====================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+clients/desktop/electron/coverage
+results.tap
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Web UI
+clients/web-ui/.nyc_output
+clients/web-ui/.build
+clients/web-ui/node_modules
+clients/web-ui/src/css
+clients/web-ui/coverage
+clients/web-ui/public/app.*
+clients/web-ui/public/aws-credentials.json
+clients/web-ui/public/index.html
+clients/web-ui/public/info.json
+clients/web-ui/public/assets/*
+
+# Client Server Common
+client-server-common/cscore/npm/example/server/node_modules
+
+Cortext.xccheckout
+xcuserdata
+clients/mobile/iOS/Cortext/Pods
+Podfile.lock
+contents.xcworkspacedata
+clients/mobile/iOS/Cortext/Cortext.xcworkspace
+clients/mobile/iOS/Cortext/CortextApp.xcworkspace/
+
+# scalajs
+node_modules
+*-opt.js*
+*-fastopt.js*
+*-jsdeps.min.js
+*-jsdeps.js
+*.tgz
+clients/mobile/iOS/ClientCommon/ClientCommon.xcodeproj/xcuserdata
+clients/mobile/iOS/Cortext/CortextApp.xcworkspace
+clients/desktop/electron/out
+
+# Server logs
+server/logs
+
+# Server local binaries
+native/
+
+# Lightbend Reactive Platform
+akka-diagnostics/
+
+# Test Coverage Report for Javascript
+checkstyle-result.xml
