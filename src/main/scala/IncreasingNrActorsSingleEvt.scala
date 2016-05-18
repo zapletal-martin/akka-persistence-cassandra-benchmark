@@ -7,7 +7,7 @@ object IncreasingNrActorsSingleEvt extends App with Dispatchers {
 
   val dispatcher =
     s"""
-      |${fixedThreadPool(64)}
+      |${fixedThreadPool(64, 100)}
       |
       |cassandra-journal {
       |  plugin-dispatcher = "my-dispatcher"

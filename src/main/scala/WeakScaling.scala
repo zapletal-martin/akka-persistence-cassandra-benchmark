@@ -7,7 +7,7 @@ object WeakScaling extends App with Dispatchers {
 
   val storeDispatcher =
     s"""
-       |${fixedThreadPool(10)}
+       |${fixedThreadPool(10, 100)}
        |
        |cassandra-journal {
        |  plugin-dispatcher = "my-dispatcher"
@@ -33,7 +33,7 @@ object WeakScaling extends App with Dispatchers {
   val results = List(1, 2, 4, 6, 8, 12, 16, 24, 32, 40, 64).map { i =>
     val dispatcher =
       s"""
-         |${fixedThreadPool(i)}
+         |${fixedThreadPool(i, 100)}
          |
          |cassandra-journal {
          |  plugin-dispatcher = "my-dispatcher"

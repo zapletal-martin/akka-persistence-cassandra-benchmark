@@ -1,6 +1,8 @@
 trait Dispatchers {
 
-  def fixedThreadPool(fixedPoolSize: Int): String =
+  def fixedThreadPool(
+      fixedPoolSize: Int,
+      throughput: Int): String =
   s"""my-dispatcher {
     |  type = "Dispatcher"
     |  executor = "thread-pool-executor"
@@ -8,6 +10,8 @@ trait Dispatchers {
     |  thread-pool-executor {
     |    fixed-pool-size = $fixedPoolSize
     |  }
+    |
+    |  throughput = $throughput
     |}"""
 
   def forkJoin(
@@ -27,6 +31,5 @@ trait Dispatchers {
       |  }
       |
       |  throughput = $throughput
-      |}
-    """.stripMargin
+      |}"""
 }

@@ -1,8 +1,10 @@
+package examples
+
 import scala.concurrent.Await
+import scala.concurrent.duration._
 
 import akka.pattern.ask
-import scala.concurrent.duration._
-import akka.actor.{Props, ActorSystem}
+import akka.actor.{ActorSystem, Props}
 import akka.persistence.PersistentActor
 import akka.persistence.cassandra.query.scaladsl.CassandraReadJournal
 import akka.persistence.journal.Tagged
@@ -11,7 +13,7 @@ import akka.stream.ActorMaterializer
 import akka.util.Timeout
 import com.typesafe.config.ConfigFactory
 
-object TagTest extends App{
+object TagTest extends App {
 
   val partitionSize = 50
   val resultSize = 25
